@@ -2,44 +2,47 @@
 <html>
   <head>
     <title>File Metadata</title>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="shortcut icon" href="https://cdn.hyperdev.com/us-east-1%3A52a203ff-088b-420f-81be-45bf559d01b1%2Ffavicon.ico" type="image/x-icon"/>
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
-    <link href="/public/style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
   </head>
-
+  
   <body>
-    <div class="container">
-      <h2>API Project: File Metadata Microservice</h2>
+    
+    <header class="container">
+      <h1>API Project: File Metadata Microservice</h1>
+    </header>
+    
+    <main class="container">
       
-      <h3>User Stories:</h3>
+      <h2>User Stories:</h2>
       <ol class="user-stories">
-        <li>I can submit a form object that includes a file upload.</li>
+        <li>I can submit a <code>form</code> object that includes a <code>file upload</code>.</li>
         <li>The form <code>file input</code> field has the <code>"name"</code> attribute set to <code>"upfile"</code>. We rely on this in testing.</li>
         <li>When I submit something, I will receive the file <code>name</code>, and <code>size</code> in bytes within the JSON response.</li>
       </ol>
-
-      <h3>Usage:</h3>
-      <p>
-        Please Upload a File ...
-      </p>
-
-      <div class="view">
-        <h4 id="output"></h4>
-        <form enctype="multipart/form-data" method="POST" action="/api/fileanalyse">
-          <input id="inputfield" type="file" name="upfile">
-          <input id="button" type="submit" value="Upload">
-        </form>
-      </div>
-
-      <hr>
-
-      <div class="footer">
-        <p>
-          by <a href="https://github.com/Myrmidonut/fcc_api_file_metadata" title="GitHub Repository" target="_blank">Frederik</a> | <a href="https://learn.freecodecamp.org/" title="Learn to code at freeCodeCamp" target="_blank">freeCodeCamp</a>
-        </p>
-      </div>
       
-    </div>
+      <hr>
+      
+      <h2>API:</h2>
+      <h3>Upload a file:</h3>
+      <form enctype="multipart/form-data" method="POST" action="/api/fileanalyse">
+        <input id="inputfield" type="file" name="upfile">
+        <input id="button" type="submit" value="Upload">
+      </form>
+      
+    </main>
+    
+    <footer class="container">
+      <hr>
+      <p>
+        by <a href="https://github.com/Myrmidonut/fcc_api_file_metadata" title="GitHub Repository" target="_blank">Frederik</a> | <a href="https://learn.freecodecamp.org/" title="Learn to code at freeCodeCamp" target="_blank">freeCodeCamp</a>
+      </p>
+    </footer>
+    
   </body>
 </html>
