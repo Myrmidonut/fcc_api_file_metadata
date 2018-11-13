@@ -47,10 +47,23 @@ form {
 }
 
 input {
-  display: block;
-  margin: auto;
+  margin: 10px auto;
+}
+
+h1 {
+  line-height: initial;
+}
+
+input[type=file] {
+  font-size: 16px;
+}
+
+input[type=submit] {
+  height: 32px;
+  font-size: 16px;
+  width: 80px;
 }
 
 #inputfield {
-  margin-bottom: 40px;
+  width: 250px;
 }
