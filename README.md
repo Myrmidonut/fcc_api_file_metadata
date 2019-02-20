@@ -1,17 +1,18 @@
 # File Metadata
 
 ## Introduction
-
+This form returns the file name and file size as JSON for any kind of submitted file.
 
 This project is part of freeCodeCamps API And Microservices certificate.
 
 ## Project Requirements
-1. I can submit a form that includes a file upload.
-2. The form file input field has the "name" attribute set to "upfile". We rely on this in testing.
-3. When I submit something, I will receive the file name and size in bytes within the JSON response
+* It is possible to submit a form that includes a file upload.
+* The form file input field has the "name" attribute set to "upfile". We rely on this in testing.
+* Submitting a file will return the file name and size in bytes within the JSON response.
 
 ## Project Data
-* To handle the file uploading you should use the [multer](https://www.npmjs.com/package/multer) npm package.
+Multer  
+https://www.npmjs.com/package/multer
 
 ## Final Project
 https://fcc-api-file-metadata-fred.glitch.me
@@ -20,12 +21,12 @@ https://fcc-api-file-metadata-fred.glitch.me
 ### Frontend:
 
 ### Backend:
-
-### Database:
+* Express
+* Multer
 
 ### Hosting:
-
+* Glitch
 
 ## Preview Images
 ### Main Screen:
-![ ](readme_images/ )
+![File Metadata](readme_images/file-metadata.png)
