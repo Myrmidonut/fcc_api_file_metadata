@@ -18,8 +18,6 @@ https://www.npmjs.com/package/multer
 https://fcc-api-file-metadata-fred.glitch.me
 
 ## Behind the scenes
-### Frontend:
-
 ### Backend:
 * Express
 * Multer
